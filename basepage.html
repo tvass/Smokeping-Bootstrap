@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="refresh" content="<##step##>">
+
+	<title>smokeping latency page for <##title##></title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	<script src="/smokeping/prototype/prototype.js" type="text/javascript"></script>      
+	<script src="/smokeping/scriptaculous/scriptaculous.js?load=builder,effects,dragdrop" type="text/javascript"></script>
+	<script src="/smokeping/cropper/cropper.js" type="text/javascript"></script>
+	<script src="/smokeping/smokeping-zoom.js" type="text/javascript"></script>
+
+	<style>
+		.menuitem {
+			font-family:monospace;
+		}
+
+		img {
+			border-width:1px;
+			border-style:solid;
+			border-color:black;
+			margin: 10px;
+			border-radius( 5px );
+		}
+	</style>
+</head>
+
+<body bgcolor="white">
+	<table border="0" cellpadding="10" cellspacing="0" class="table">
+	<tr>
+		<td class="menubar" align="left" width="130" valign="top">
+			<div class="page-header"><h3><B>SmokePing Targets</B></h3></div>
+			<p><##menu##></P><br/>
+		</td>
+		<td rowspan="2" valign="top">
+			<div class="page-header"><span class="label label-primary"><##title##></span></div>
+			<p><##remark##></p>
+			<p><##overview##></p>
+			<p><##body##></p>
+		</td>
+	</tr>
+	</table>
+<br />
+
+<div class="page-header">
+<h6>
+maintained by <A href="mailto:<##contact##>"><##owner##></A><br />
+running on <##smokeping##> by <##author##><br />
+<##smokelogo##>&nbsp;<##rrdlogo##></P><br />
+</h6>
+</div>
+</body>
+</html>
